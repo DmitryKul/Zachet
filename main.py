@@ -72,13 +72,14 @@ while game_over == False:
     if win != "":
         game_over = True
 
+    elif game_over := True:
+        print("Ничья!")
+        game_over = True
+        win = "Ничья"
+
     else:
         game_over = False
 
-    # else:
-    #     print("Ничья")
-    #     game_over = True
-    #     break
 
     player1 = not(player1)
 
