@@ -61,18 +61,18 @@ while game_over == False:
 
     if player1 == True:
         symbol = "X"
-        step = int(input("ИГРОК 1, ваш ход: "))
+        step = int(input("ИГРОК X, ваш ход: "))
 
     else:
         symbol = "O"
-        step = int(input("ИГРОК 2, ваш ход: "))
+        step = int(input("ИГРОК O, ваш ход: "))
 
     step_map(step, symbol)
     win = get_result()
     if win != "":
         game_over = True
 
-    elif game_over := True:
+    elif set(map) == {"O", "X"} or set(map) == {"O", "X"}:
         print("Ничья!")
         game_over = True
         win = "Ничья"
